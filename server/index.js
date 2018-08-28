@@ -15,7 +15,6 @@ db.on('error', console.log);
 db.once('open', ()=>{
     let movie = new Movie({title: 'yaoxiaoyu'});
     movie.save(function(err){
-        console.log("1")
         if(err)
             console.log(err)   
     })
