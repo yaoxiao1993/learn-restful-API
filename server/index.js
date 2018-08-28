@@ -5,7 +5,7 @@ const app = express();
 //引入mongoose数据库驱动
 const mongoose = require('mongoose');
 //设置连接位置
-mongoose.connect('mongodb://localhost:27017/movie-db',{useNewUrlParser:true});
+mongoose.connect('mongodb://localhost:27017/movie-db',{ useNewUrlParser: true });
 const db = mongoose.connection;
 //引入MovieSchema
 const Movie = require('../module/movie')
@@ -13,9 +13,9 @@ const Movie = require('../module/movie')
 db.on('error', console.log);
 //手动连接一次，回调函数打印success
 db.once('open', ()=>{
-    let movie = new Movie({title: '齐天大圣'});
+    let movie = new Movie({title: 'yaoxiaoyu'});
     movie.save(function(err){
-        console.log("1!");
+        console.log("1")
         if(err)
             console.log(err)   
     })
