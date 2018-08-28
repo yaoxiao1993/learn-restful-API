@@ -1,16 +1,25 @@
 {
-  "name": "server",
+  "name": "learn-restful-API",
   "version": "1.0.0",
-  "description": "",
+  "description": "- 安装项目需要用到的依赖 ```npm install``` - 下载并安装mongodb",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaoxiao1993/learn-restful-API.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "mongoose": "^5.2.9"
-  }
+  "bugs": {
+    "url": "https://github.com/yaoxiao1993/learn-restful-API/issues"
+  },
+  "homepage": "https://github.com/yaoxiao1993/learn-restful-API#readme"
 }
